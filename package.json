@@ -3,14 +3,20 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "axios": "^0.21.1",
     "cra-template": "1.1.2",
+    "gh-pages": "^3.2.3",
+    "prop-types": "^15.7.2",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "react-router-dom": "^5.2.1",
     "react-scripts": "^4.0.3"
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build"
+    "build": "react-scripts build",
+    "deploy": "gh-pages -d build",
+    "predeploy": "npm run build"
   },
   "eslintConfig": {
     "extends": [
@@ -31,6 +37,9 @@
     ]
   },
   "devDependencies": {
+    "@types/react": "^17.0.19",
+    "@types/react-router-dom": "^5.1.8",
     "web-vitals": "^2.1.0"
-  }
+  },
+  "homepage": "https://hs-jeong88.github.io/movie_app"
 }
